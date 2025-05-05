@@ -76,6 +76,30 @@ a {
   color: var(--dark-text); /* Використовуємо змінну для кольору тексту */
 }
 
+.personal-info__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.btn-download-cv {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4a90e2;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download-cv:hover {
+  background-color: #357ab8;
+}
+
 .personal-info__title {
   font-size: 18px;
   color: var(--primary-color);
