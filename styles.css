@@ -1,0 +1,284 @@
+/* Base Reset and Fonts */
+:root {
+  --dark-bg: #121212;
+  --dark-text: #e0e0e0;
+  --primary-color: #90caf9;
+  --secondary-bg: #1e1e1e;
+  --header-bg: #2c2c2c;
+  --text-light: #bbb;
+  --font-family-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 14px;
+  --line-height-base: 1.6;
+  --box-shadow-dark: 0 0 10px rgba(0, 0, 0, 0.6);
+  --border-color-light: #333;
+  --text-italic: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-base);
+  font-size: var(--font-size-base); /* Додано базовий розмір шрифту */
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.resume-container {
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-dark);
+}
+
+/* Header */
+.resume__header {
+  background-color: var(--header-bg);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner__personal {
+  display: flex;
+  align-items: center;
+}
+
+.personal-info__avatar-container {
+  margin-right: 20px;
+}
+
+.personal-info__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+.personal-info__name {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--dark-text); /* Використовуємо змінну для кольору тексту */
+}
+
+.personal-info__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.btn-download-cv {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4a90e2;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download-cv:hover {
+  background-color: #357ab8;
+}
+
+.personal-info__title {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-top: 5px;
+}
+
+.personal-info__introduction {
+  margin-top: 10px;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+/* Main Content */
+.resume__main-content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.main-content__left,
+.main-content__right {
+  padding: 20px;
+}
+
+.main-content__left {
+  width: 35%;
+  border-right: 1px solid var(--border-color-light);
+}
+
+.main-content__right {
+  width: 65%;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+/* Contact Section */
+.contact-section__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-section__icon {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.contact-section__text {
+  color: var(--dark-text);
+}
+
+/* Skills & Languages */
+
+.skills-section__list,
+.languages-section__list {
+  padding-left: 25px;
+}
+.skills-section__item,
+.languages-section__item {
+  margin-bottom: 10px;
+}
+
+/* Experience Section */
+.experience-section__item {
+  margin-bottom: 20px;
+}
+
+.job__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.job__title {
+  font-weight: bold;
+  font-size: var(--font-size-base);
+  color: var(--dark-text);
+}
+
+.job__company {
+  font-style: italic;
+  color: var(--text-italic);
+}
+
+.job__duration {
+  color: var(--primary-color);
+}
+
+.job__details {
+  list-style: disc inside;
+  padding-left: 10px;
+}
+
+/* Education Section */
+.education-section__item {
+  margin-bottom: 20px;
+}
+
+.education-item__degree {
+  font-weight: bold;
+  font-size: var(--font-size-base);
+  color: var(--dark-text);
+}
+
+.education-item__university {
+  font-style: italic;
+  color: var(--text-italic);
+}
+
+.education-item__duration {
+  color: var(--primary-color);
+}
+
+/* Projects Section */
+.projects-section__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.project-item__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.project-item {
+  margin-bottom: 20px;
+}
+
+.project-item__title {
+  font-weight: bold;
+  font-size: var(--font-size-base);
+  color: var(--dark-text);
+}
+.project-item__links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-item__links a {
+  color: var(--primary-color);
+  font-size: var(--font-size-base);
+  transition: color 0.3s ease;
+}
+
+.project-item__links a:hover {
+  color: var(--dark-text);
+}
+
+.project-item__tech-stack {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.project-item__description {
+  margin-top: 5px;
+  color: #ccc; /* Цей колір не має змінної, якщо він використовується лише тут */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume__main-content {
+    flex-direction: column;
+  }
+
+  .main-content__left,
+  .main-content__right {
+    width: 100%;
+    border: none;
+  }
+
+  .main-content__left {
+    padding-bottom: 0;
+  }
+}
