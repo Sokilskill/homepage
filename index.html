@@ -4,9 +4,393 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5b0c976e67.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Résumé</title>
   </head>
-  <body>
-    ― Hello World! &#x1F609;
+
+  <body class="dark">
+    <div class="container">
+      <div class="resume-container">
+        <header class="resume__header">
+          <div class="header-container">
+            <div class="header-inner__personal">
+              <div class="personal-info__avatar-container">
+                <img
+                  class="personal-info__avatar"
+                  src="assets/avatar.png"
+                  alt="Avatar"
+                />
+              </div>
+
+              <div class="personal-info">
+                <div class="personal-info__header">
+                  <h1 class="personal-info__name">Serhii Sokolovskyi</h1>
+                  <a
+                    style="margin-left: auto"
+                    class="btn-download-cv"
+                    href="assets/FullStack_Sokolovskyi_Serhii.pdf"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-download"></i> Download CV
+                  </a>
+                </div>
+                <h2 class="personal-info__title">Full Stack Developer</h2>
+
+                <p class="personal-info__introduction">
+                  Junior Full Stack Developer with QA and engineering
+                  experience. I bring practical problem-solving skills and a
+                  technical mindset from years of running my own repair
+                  business, now focused on delivering modern, user-centered web
+                  applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main class="resume__main-content">
+          <div class="main-content__left">
+            <section class="contact-section">
+              <h3 class="contact-section__title section-title">Contact</h3>
+              <ul class="contact-section__list">
+                <li class="contact-section__item">
+                  <a
+                    class="contact-section__link"
+                    href="mailto: ssokolovskyiwork@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-envelope contact-section__icon"></i>
+                    <span class="contact-section__text"
+                      >ssokolovskyiwork@gmail.com</span
+                    >
+                  </a>
+                </li>
+                <li class="contact-section__item">
+                  <a class="contact-section__link" href="tel:1234567890">
+                    <i class="fas fa-mobile-alt contact-section__icon"></i>
+                    <span class="contact-section__text"
+                      >+38 (098) 934-92-43</span
+                    >
+                  </a>
+                </li>
+
+                <li class="contact-section__item">
+                  <a
+                    class="contact-section__link"
+                    href="https://www.linkedin.com/in/serhiisokolovskyi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-linkedin contact-section__icon"></i>
+                    <span class="contact-section__text">Linkedin</span>
+                  </a>
+                </li>
+                <li class="contact-section__item">
+                  <a
+                    class="contact-section__link"
+                    href="https://github.com/Sokilskill"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github contact-section__icon"></i>
+                    <span class="contact-section__text">GitHub</span>
+                  </a>
+                </li>
+                <li class="contact-section__item">
+                  <a
+                    class="contact-section__link"
+                    href="https://t.me/serhii_sok"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-telegram contact-section__icon"></i>
+                    <span class="contact-section__text">Telegram</span>
+                  </a>
+                </li>
+
+                <li class="contact-section__item">
+                  <a
+                    class="contact-section__link"
+                    href="https://www.google.com/maps/search/google+map/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-map-marker-alt contact-section__icon"></i>
+                    <span class="contact-section__text"
+                      >Vinnytsia, Ukraine</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="skills-section">
+              <h3 class="skills-section__title section-title">Skills</h3>
+              <ul class="skills-section__list">
+                <li class="skills-section__item">
+                  <p>HTML5/CSS3/SASS</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>GIT</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>JavaScript</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>React</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>Redux</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>REST API</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>Chakra UI</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>Vite</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>Node.js</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>MongoDB</p>
+                </li>
+                <li class="skills-section__item">
+                  <p>Jira</p>
+                </li>
+              </ul>
+            </section>
+            <section class="languages-section">
+              <h3 class="languages-section__title section-title">Languages</h3>
+              <ul class="languages-section__list">
+                <li class="languages-section__item language-item">
+                  <span class="language-item__name">Ukrainian</span>
+                  <span class="language-item__level text-level">Native</span>
+                </li>
+                <li class="languages-section__item language-item">
+                  <span class="language-item__name">English</span>
+                  <span class="language-item__level text-level"
+                    >Pre-Intermediate</span
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="main-content__right">
+            <section class="about-section">
+              <h3 class="about-section__title section-title">About Me</h3>
+              <p class="about-section__description">
+                Junior Full Stack Developer with a solid foundation in web
+                technologies and hands-on experience in both software testing
+                and running a technical service business. My background helps me
+                approach challenges with precision, responsibility, and customer
+                focus. I completed a full stack development course, where I
+                built projects using React, Node.js, MongoDB, and TypeScript.
+                Motivated by lifelong learning and teamwork, I’m eager to
+                contribute to dynamic development teams and grow as a software
+                engineer.
+              </p>
+            </section>
+
+            <section class="experience-section">
+              <h3 class="experience-section__title section-title">
+                Experience
+              </h3>
+              <div class="experience-section__item job">
+                <div class="job__header">
+                  <div>
+                    <h4 class="job__title">QA Intern</h4>
+                    <p class="job__company">G5 Games®</p>
+                  </div>
+                  <span class="job__duration date-duration"
+                    >March 2025-Present</span
+                  >
+                </div>
+                <ul class="job__details">
+                  <li class="job__detail">
+                    Testing mobile games on Android devices
+                  </li>
+                  <li class="job__detail">Working with Jira and TestRail</li>
+                  <li class="job__detail">Executing test cases</li>
+                  <li class="job__detail">Reporting bugs</li>
+                </ul>
+              </div>
+
+              <div class="experience-section__item job">
+                <div class="job__header">
+                  <div>
+                    <h4 class="job__title">
+                      Owner, Founder, and Technician of Household Electrical
+                      Appliance Repair Service
+                    </h4>
+                    <p class="job__company">SP</p>
+                  </div>
+                  <span class="job__duration date-duration"
+                    >June 2014-Present</span
+                  >
+                </div>
+
+                <ul class="job__details">
+                  <li class="job__detail">
+                    Launching, managing, and maintaining a business specializing
+                    in the repair of household electrical appliances.
+                  </li>
+                  <li class="job__detail">
+                    Establishing and maintaining efficient customer service
+                    processes.
+                  </li>
+                  <li class="job__detail">
+                    Performing repairs and maintenance on household electrical
+                    appliances of varying complexity.
+                  </li>
+                  <li class="job__detail">
+                    Managing all aspects of financial operations, including
+                    bookkeeping, procurement of materials, and expense control.
+                  </li>
+                  <li class="job__detail">
+                    Implementing new technologies and repair methodologies to
+                    improve work efficiency and service quality.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="education-section">
+              <h3 class="education-section__title section-title">Education</h3>
+              <div class="education-section__item education-item">
+                <div class="education-item__header">
+                  <div>
+                    <h4 class="education-item__degree">Full Stack Developer</h4>
+                    <p class="education-item__university">IT School GOIT</p>
+                  </div>
+                  <span class="education-item__duration date-duration"
+                    >2023 - 2024</span
+                  >
+                </div>
+              </div>
+              <div class="education-section__item education-item">
+                <div class="education-item__header">
+                  <div>
+                    <h4 class="education-item__degree">
+                      Organization of Transportation and Transport Management
+                    </h4>
+                    <h4 class="education-item__degree">Transport Engineer</h4>
+                    <p class="education-item__university">
+                      Ukrainian State Academy Of Railway Transport
+                    </p>
+                  </div>
+                  <span class="education-item__duration date-duration"
+                    >2009 - 2014</span
+                  >
+                </div>
+              </div>
+            </section>
+
+            <section class="projects-section">
+              <h3 class="projects-section__title section-title">Projects</h3>
+
+              <ul class="projects-section__list">
+                <li class="projects-section__item project-item">
+                  <div class="project-item__header">
+                    <h4 class="project-item__title">Animal shelter</h4>
+                    <div class="project-item__links">
+                      <a
+                        href="https://github.com/Sokilskill/animal-shelter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://sokilskill.github.io/animal-shelter/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <p class="project-item__tech-stack date-duration">
+                    Typescript, React, Chakra ui
+                  </p>
+                  <p class="project-item__description">
+                    The application allows users to view information about
+                    animals in need of homes and learn about adoption
+                    opportunities.
+                  </p>
+                </li>
+
+                <li class="projects-section__item project-item">
+                  <div class="project-item__header">
+                    <h4 class="project-item__title">Power Pulse</h4>
+                    <div class="project-item__links">
+                      <a
+                        href="https://github.com/Sokilskill/project-daily-energy-dose"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://sokilskill.github.io/project-daily-energy-dose/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <p class="project-item__tech-stack date-duration">
+                    React (Hooks, Routers, Redux Toolkit)
+                  </p>
+                  <p class="project-item__description">
+                    Power Pulse web application, allowing you to explore and
+                    manage your sports activity and nutrition.
+                  </p>
+                </li>
+
+                <li class="projects-section__item project-item">
+                  <div class="project-item__header">
+                    <h4 class="project-item__title">Tasty Treats</h4>
+                    <div class="project-item__links">
+                      <a
+                        href="https://github.com/Sokilskill/project-cookery-canvas"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://sokilskill.github.io/project-cookery-canvas/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <p class="project-item__tech-stack date-duration">
+                    HTML, CSS, JS
+                  </p>
+                  <p class="project-item__description">
+                    The site features a swiper, burger menu, modal windows, and
+                    custom pagination.
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
